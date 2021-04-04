@@ -1,0 +1,78 @@
+:root {
+  --bgr-color: hsl(200, 100%, 50%);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: calc(100% - 20px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: var(--bgr-color, grey);
+}
+
+#menu-toggle {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+#divHamburger {
+  position: absolute;
+
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+
+  background-color: var(--bgr-color);
+}
+
+#span1 {
+  position: relative;
+  top: 1px;
+  height: 5px;
+  width: 30px;
+  background: black;
+  border-radius: 20px;
+}
+
+#span2 {
+  position: relative;
+  top: 10px;
+  height: 5px;
+  width: 30px;
+  background: black;
+  border-radius: 20px;
+}
+
+#span3 {
+  position: relative;
+  top: 19px;
+  height: 5px;
+  width: 30px;
+  background: black;
+  border-radius: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  /*visibility: hidden;*/
+  display: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
