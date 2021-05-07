@@ -2,31 +2,34 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<title>Easy Hamburger Menu</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Navbar</title>
 </head>
 
 <body>
-	<div class="wrapper">
-		<input type="checkbox" id="menu-toggle">
+    <header>
+        <h1 class="logo"><a href="#">ITT-News</a></h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
 
-		<div id="divHamburger">
-			<span id="span1"></span>
-			<span id="span2"></span>
-			<span id="span3"></span>
-		</div>
-
-		<nav>
-			<ul>
-				<li><a href="#">aaa</a></li>
-				<li><a href="#">bbb</a></li>
-				<li><a href="#">ccc</a></li>
-			</ul>
-		</nav>
-	</div>
+    <div class="content">
+        <h2>Content here boi</h2>
+    </div>
 
 </body>
 
