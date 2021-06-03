@@ -13,23 +13,11 @@
   padding: 0;
 }
 
-html {
-  /* trying juicy stuff here */
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory;
-  scroll-padding-top: 9vh;
-}
-
 body {
   background: hsl(34 100% 50% / 0.1);
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   min-height: 100vh;
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory;
-  scroll-padding-top: 9vh;  
 }
 
 main {
@@ -41,7 +29,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  scroll-snap-align: start;
 }
 
 .section1 {
@@ -262,6 +249,7 @@ nav a:focus {
 }
 
 @media screen and (min-width: 800px) {
+
   .nav-toggle-label {
     display: none;
   }
@@ -325,5 +313,26 @@ nav a:focus {
   nav a:hover::before,
   nav a:focus::before {
     transform: scale(1, 1);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    /* trying juicy stuff here */
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 9vh;
+  }
+
+  body {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 9vh; 
+  }
+
+  section {
+    scroll-snap-align: start;
   }
 }
