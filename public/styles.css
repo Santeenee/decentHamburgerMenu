@@ -13,17 +13,116 @@
   padding: 0;
 }
 
+html {
+  /* trying juicy stuff here */
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 9vh;
+}
+
 body {
   background: hsl(34 100% 50% / 0.1);
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  min-height: 100vh;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 9vh;  
 }
 
 main {
-  min-height: 90vh;
+  padding-top: 10vh;
+}
+
+section {
+  height: 25vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  scroll-snap-align: start;
+}
+
+.section1 {
+  background-color: burlywood;
+}
+
+.section2 {
+  background-color: turquoise;
+}
+
+.section3 {
+  background-color: tomato;
+}
+
+.section4 {
+  background-color: lightsteelblue;
+}
+
+.section5 {
+  background-color: hsl(120, 100%, 64%);
+}
+
+.section6 {
+  background-color: hsl(328, 84%, 66%);
+}
+
+.section7 {
+  background-color: burlywood;
+}
+
+.section8 {
+  background-color: turquoise;
+}
+
+.section9 {
+  background-color: tomato;
+}
+
+.section10 {
+  background-color: lightsteelblue;
+}
+
+.section11 {
+  background-color: hsl(120, 100%, 64%);
+}
+
+.section12 {
+  background-color: hsl(328, 84%, 66%);
+}
+
+/**/
+.section13 {
+  background-color: burlywood;
+}
+
+.section14 {
+  background-color: turquoise;
+}
+
+.section15 {
+  background-color: tomato;
+}
+
+.section16 {
+  background-color: lightsteelblue;
+}
+
+.section17 {
+  background-color: hsl(120, 100%, 64%);
+}
+
+.section18 {
+  background-color: hsl(328, 84%, 66%);
+}
+
+.section19 {
+  background-color: lightsteelblue;
+}
+
+.section20 {
+  background-color: cyan;
 }
 
 :focus {
@@ -37,6 +136,7 @@ label {
 /* navigation styles start here */
 
 header {
+  height: 9vh;
   background: hsl(var(--hue) 100% var(--light));
   text-align: center;
   position: fixed;
