@@ -6,4 +6,4 @@ a decent hamburger menu with cool animations
 
 Just created a new navbar with the checkbox thing without JavaScript.
 
-[webapp](https://santeenee-navbar.netlify.app/)
+### [Try it!](https://santeenee-navbar.netlify.app/)
