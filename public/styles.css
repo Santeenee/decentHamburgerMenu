@@ -123,7 +123,7 @@ label {
 /* navigation styles start here */
 
 header {
-  height: 5rem;
+  height: 4.5rem;
   background: hsl(var(--hue) 100% var(--light));
   text-align: center;
   position: fixed;
